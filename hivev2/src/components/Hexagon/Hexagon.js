@@ -4,13 +4,15 @@ import style from './Hexagon.css';
 class Hexagon extends Component{
     constructor(props){
         super(props);
-        this.state={};
+        this.state={
+            type:props.type
+        };
     }
 
     render(){
         return(
             <div class="hexagon">
-                <img></img>
+                <div class= {this.state.type}></div>
             </div>
         );
     }

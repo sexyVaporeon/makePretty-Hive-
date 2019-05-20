@@ -20,7 +20,8 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Hexagon></Hexagon>
+      <Hexagon type="PokemonGraduate"></Hexagon>
+      <Hexagon type="SpongeBobGraduate"></Hexagon>
     </div>
   );
 }
