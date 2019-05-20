@@ -10,8 +10,7 @@ class Hexagon extends Component{
     render(){
         return(
             <div class="hexagon">
-                <div class="hexTop"></div>
-                <div class="hexBottom"></div>
+                <img></img>
             </div>
         );
     }
