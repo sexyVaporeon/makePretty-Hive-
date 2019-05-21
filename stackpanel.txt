@@ -1,0 +1,9 @@
+		<StackPanel horizontalAlignment="center" verticalAlignment="center" orientation="vertical"  padding="3%">
+                    <span class= {styles.dot}>
+                        <div className ={styles.iconQuestionCircle}></div>
+                    </span>                       
+                    <div className={styles.header}>Are you sure you dont want insurance?</div>
+                    <div className={styles.text}>You haven't selected any insurance products. Without insurance cover, if your device is lost,stolen or damaged, you will be liable for the full
+                        cost of replacing the device our the cost of repairs</div>
+                    <div className={styles.offer}>You can insure your <span class={styles.highlight}>{this.state.phone.name}</span> worth <span class={styles.highlight}>{this.state.phone.worth}</span>, for loss, theft and damage for <span class={styles.highlight}>{this.state.phone.payment}</span></div>
+                 </StackPanel>
