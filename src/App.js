@@ -7,12 +7,13 @@ import About from "./components/About/About";
 import LevelUp from "./components/LevelUp/LevelUp";
 import ScrollUpButton from "react-scroll-up-button";
 import ReactSidebar from './components/ReactSidebar/ReactSidebar';
+import Hexagon from './components/Hexagon/Hexagon';
 // import logo from 'src/Icon/hive.PNG';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="background">
 
       <div id="root">
         <Router>
@@ -31,11 +32,12 @@ function App() {
 
           </div>
         </Router>
-        <Footer />
+        <Hexagon type ="DefaultGraduate"></Hexagon>
+        <hr/>
         <ScrollUpButton/>
       </div>
-
-
+      <div className="space"></div>
+      <Footer/>
     </div>
   );
 }

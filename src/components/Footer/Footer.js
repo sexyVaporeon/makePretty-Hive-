@@ -10,7 +10,7 @@ import StickyFooter from 'react-sticky-footer';
 class Footer extends React.Component {
   render() {
     return (
-    <div>
+    <div className="footer">
 		{/* <footer id="footerControl">
             <p>Made with &hearts; love by team: makePretty(theHive)</p>
           </footer> */}

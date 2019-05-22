@@ -80,3 +80,14 @@ float: center;
   display: flex;
   flex-direction: row;
 }
+
+.background{
+  background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: inline-block;
+}
+
+.space{
+  height: 40vh;
+}
