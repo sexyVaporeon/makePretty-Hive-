@@ -12,6 +12,7 @@ import LevelUpImage from "../../Themes/Default/Elf.jpg";
 // this section. 
 class About extends React.Component {
   render() {
+    console.log('sfdzv');
     return (<div>
 <div class="clearfix">
 <p id="heroQuote">

@@ -8,8 +8,16 @@ import React from 'react';
 // write your component in functional form as above and delete
 // this section. 
 class Home extends React.Component {
-  render() {
-    return <h1>Welcome</h1>;
+  constructor(props){
+    super(props);
+    
+  }
+  render() {;
+    console.log(this.props.hex)
+    return(<div>
+       {this.props.hex}
+       <hr/>
+  </div>);
   }
 }
 

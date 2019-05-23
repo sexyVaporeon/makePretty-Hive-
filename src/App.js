@@ -48,20 +48,22 @@ import './App.css';
             <Navbar liftStateUp={this.liftStateUp} />
             <div className="Mainrow">
             
-            <ReactSidebar/>
   
   
             <Switch>
-              <Route path="/" exact component={Home} />
-              <Route path="/about/" component={About} />
-              <Route path="/levelUp/" component={LevelUp} />
+            <Route
+              path='/'
+                render={(props) => <Home {...props} hex={this.getHexagon()} />}
+              />
+              <Route path="/about" component={About} />
+              <Route path="/levelUp" component={LevelUp} />
             </Switch> 
             
   
             </div>
           </Router>
-          {this.getHexagon()}
-          <hr/>
+          {/* {this.getHexagon()}
+          <hr/> */}
           <ScrollUpButton/>
         </div>
         <div className="space"></div>

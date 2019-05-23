@@ -23,10 +23,10 @@ class Navbar extends React.Component {
 		}
 	}
 
-	setActiveNode=(name)=>{
-		this.setState({activeNode:name});
-		this.props.liftStateUp(name);
-	}
+	// setActiveNode=(name)=>{
+	// 	this.setState({activeNode:name});
+	// 	this.props.liftStateUp(name);
+	// }
 
 	liftStateUp=(data)=>{
 		this.setState({activeNode:data});
