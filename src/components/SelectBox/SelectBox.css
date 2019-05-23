@@ -1,0 +1,79 @@
+@keyframes slideLeft {
+    from {
+      transform: translateX(0); }
+    to {
+      transform: translateX(-100%); } }
+  
+  .slideLeft {
+    animation: slideLeft 2s both; }
+  
+  /* Select */
+  .select {
+    position: relative;
+    width: 100%;
+    min-width: 250px;
+    max-width: 530px;
+    display: table;
+    min-height: 80px;
+    max-height: 80px;
+    border: solid 2px #999;
+    border-radius: 3px;
+    text-align: left; 
+    margin-left: 150%}
+    .select::after {
+      content: '';
+      cursor: pointer;
+      position: absolute;
+      right: 38px;
+      top: 24px;
+      height: 20px;
+      width: 20px;
+      transform: rotate(135deg);
+      border-width: 2px 2px 0 0;
+      border-style: solid;
+      border-color: #999; }
+    .select--half {
+      max-width: 265px; }
+    .select--borderless {
+      border-width: 0; }
+    .select--half {
+      max-width: calc(530px / 2); }
+    .select__label {
+      color: #000; }
+    .select__selected {
+      cursor: pointer;
+      display: table-cell;
+      vertical-align: middle;
+      color: #999;
+      background-color: #FFF;
+      /*padding: 0 30px;*/
+      height: 100%;
+      appearance: none;
+      box-sizing: border-box; }
+    .select__box {
+      cursor: pointer;
+      position: absolute;
+      left: 100px;
+      width: 100%;
+      margin: 0;
+      padding: 5px;
+      overflow: auto;
+      max-height: 280px;
+      top: 72px;
+      min-width: 250px;
+      max-width: 530px;
+      background-color: #FFF;
+      border-radius: 3px;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.34902);
+      display: none;
+      z-index: 100; }
+    .select--open > .select__box {
+      display: block; }
+    .select__option {
+      padding: 20px 35px;
+      border-bottom: 1px solid #EBEBEB; }
+      .select__option:last-child {
+        border-bottom: none; }
+  
+  /* End Select */
+  

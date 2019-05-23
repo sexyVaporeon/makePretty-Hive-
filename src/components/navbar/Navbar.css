@@ -1,0 +1,11 @@
+hr{
+    margin-top: -1%;
+}
+
+.image{
+    background-image: url('./../../Icon/hive.PNG');
+    width: 200px;
+    height: 80px;
+    display: inline-block;
+    background-size: 100% 100%; 
+}
