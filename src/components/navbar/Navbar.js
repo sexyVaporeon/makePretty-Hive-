@@ -27,12 +27,16 @@ class Navbar extends React.Component {
 		this.setState({activeNode:name});
 		this.props.liftStateUp(name);
 	}
+
+	liftStateUp=(data)=>{
+		this.setState({activeNode:data});
+	  }
   render() {
     return ( 
 				<div className="navigation-bar">
 					<div id="navigation-container">
 					<StackPanel horizontalAlignment="center" verticalAlignment="center" orientation="horizontal"  padding="3%">
-						<div className="image" onClick={()=>this.setActiveNode('dfsh')}></div>
+						<div className="image" onClick={()=>this.setActiveNode(this.state.activeNode)}></div>
 						<div className="menu">
 							<ul id="nav">
 									<li id="nav-Home"><Link to="/">Home</Link></li>
@@ -41,7 +45,7 @@ class Navbar extends React.Component {
 									<li id="nav-About"><Link to="/about">About</Link></li>
 							</ul>
 							</div>	
-							<SelectBox options={themes}></SelectBox>
+							<SelectBox options={themes} liftStateUp={this.liftStateUp}></SelectBox>
 							</StackPanel>
 							<hr/>
 					</div>

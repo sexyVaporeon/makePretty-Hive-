@@ -7,7 +7,7 @@ class SelectBox extends Component {
         super(props);
         this.state = {
             selectedOption: this.props.options[0],
-            isSelectOpen: false
+            isSelectOpen: false,
         };
     }
 
@@ -21,7 +21,9 @@ class SelectBox extends Component {
         this.setState({
             selectedOption: option}
         );
+        this.props.liftStateUp(option);
     };
+
 
     render() {
         const options = this.props.options.map((option, i) =>
