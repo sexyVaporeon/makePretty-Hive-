@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -11,35 +11,49 @@ import Hexagon from './components/Hexagon/Hexagon';
 // import logo from 'src/Icon/hive.PNG';
 import './App.css';
 
-function App() {
-  return (
-    <div className="background">
+ class App extends Component {
+   constructor(props){
+     super(props);
+     this.state={
+       activeNode: 'fhf'
+     };
+   }
 
-      <div id="root">
-        <Router>
-          <Navbar />
-          <div className="Mainrow">
-          
-          <ReactSidebar/>
+   liftStateUp=(data)=>{
+     this.setState({activeNode:data});
+   }
 
-
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/about/" component={About} />
-            <Route path="/levelUp/" component={LevelUp} />
-          </Switch> 
-          
-
-          </div>
-        </Router>
-        <Hexagon type ="DefaultGraduate"></Hexagon>
-        <hr/>
-        <ScrollUpButton/>
+   render(){
+    return (
+      <div className="background">
+  
+        <div id="root">
+          <Router>
+            <Navbar liftStateUp={this.liftStateUp} />
+            <div className="Mainrow">
+            
+            <ReactSidebar/>
+  
+  
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/about/" component={About} />
+              <Route path="/levelUp/" component={LevelUp} />
+            </Switch> 
+            
+  
+            </div>
+          </Router>
+          <Hexagon type ="DefaultGraduate"></Hexagon>
+          <hr/>
+          <div className="col-md-6">{this.state.activeNode}</div>
+          <ScrollUpButton/>
+        </div>
+        <div className="space"></div>
+        <Footer/>
       </div>
-      <div className="space"></div>
-      <Footer/>
-    </div>
-  );
+    );
+   }
 }
 
 export default App;

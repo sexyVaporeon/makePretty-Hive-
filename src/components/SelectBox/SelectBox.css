@@ -10,7 +10,7 @@
   /* Select */
   .select {
     position: relative;
-    width: 100%;
+    width: 80%;
     min-width: 250px;
     max-width: 530px;
     display: table;
@@ -19,7 +19,7 @@
     border: solid 2px #999;
     border-radius: 3px;
     text-align: left; 
-    margin-left: 150%}
+    margin-left: 100%}
     .select::after {
       content: '';
       cursor: pointer;
