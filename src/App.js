@@ -15,17 +15,33 @@ import './App.css';
    constructor(props){
      super(props);
      this.state={
-       activeNode: 'fhf'
+       theme: 'Default'
      };
    }
 
+   getBackground(){
+     let classes =["background"];
+     if (this.state.theme == 'Pokemon'){
+       classes.push("PokemonBackground")
+     }
+     console.log(classes);
+     return classes.join(' ');
+   }
    liftStateUp=(data)=>{
-     this.setState({activeNode:data});
+     this.setState({theme:data});
+   }
+
+   getHexagon(){
+     let type = this.state.theme+"Graduate";
+     console.log(type);
+     return(
+      <Hexagon type ={type}></Hexagon>
+     );
    }
 
    render(){
     return (
-      <div className="background">
+      <div className={this.getBackground()}>
   
         <div id="root">
           <Router>
@@ -44,9 +60,8 @@ import './App.css';
   
             </div>
           </Router>
-          <Hexagon type ="DefaultGraduate"></Hexagon>
+          {this.getHexagon()}
           <hr/>
-          <div className="col-md-6">{this.state.activeNode}</div>
           <ScrollUpButton/>
         </div>
         <div className="space"></div>
