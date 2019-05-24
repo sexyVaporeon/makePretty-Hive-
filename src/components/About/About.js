@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import HeroJourneyImage from "../../Themes/Default/Hero.PNG";
 import AdventureImage from "../../Themes/Default/adventure.PNG";
 import SideQuestImage from "../../Themes/Default/sideQuest.PNG";
@@ -10,9 +10,13 @@ import LevelUpImage from "../../Themes/Default/Elf.jpg";
 // todo: Unless you need to use lifecycle methods or local state,
 // write your component in functional form as above and delete
 // this section. 
-class About extends React.Component {
+class About extends Component {
+  constructor(props){
+    super(props);
+    this.props.liftStateUp(false);
+  }
+
   render() {
-    console.log('sfdzv');
     return (<div>
 <div class="clearfix">
 <p id="heroQuote">

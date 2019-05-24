@@ -33,7 +33,6 @@ import './App.css';
 
    getHexagon(){
      let type = this.state.theme+"Graduate";
-     console.log(type);
      return(
       <Hexagon type ={type}></Hexagon>
      );
@@ -53,9 +52,9 @@ import './App.css';
             <Switch>
             <Route
               path='/'
-                render={(props) => <Home {...props} hex={this.getHexagon()} />}
+                render={(props) => <Home {...props} hex={this.getHexagon()} showHex={true} />}
               />
-              <Route path="/about" component={About} />
+              <Route path="/about" component={About} /> 
               <Route path="/levelUp" component={LevelUp} />
             </Switch> 
             
