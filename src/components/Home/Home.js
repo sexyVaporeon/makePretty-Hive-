@@ -16,6 +16,7 @@ class Home extends React.Component {
     this.state={
       showHex: true
     };
+    console.log(this.props.theme)
     
   }
 
@@ -34,7 +35,7 @@ class Home extends React.Component {
       {this.getHexagon()}
       <Route
               path='/about'
-                render={(props) => <About {...props} liftStateUp={this.liftStateUp} theme={this.props.theme}/>}
+                render={(props) => <About {...props}  theme={this.props.theme}/>}
               />
       <Route
               path='/levelUp'

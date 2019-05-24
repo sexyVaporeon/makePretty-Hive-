@@ -40,7 +40,7 @@ class Navbar extends React.Component {
 						<div className="image" ></div>
 						<div className="menu">
 							<ul id="nav">
-									<li id="nav-Home"><Link to="/">Home</Link></li>
+									<li id="nav-Home"><Link to="/home">Home</Link></li>
 									<li id="nav-LevelUp"><Link to="/levelUp">LevelUp</Link></li>
 									<li id="nav-Bug"><a href="https://trello.com/c/h8WuGyYC/1-%F0%9F%90%9Ehey-i-found-a-bug">Report a bug</a></li>
 									<li id="nav-About"><Link to="/about">About</Link></li>

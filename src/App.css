@@ -58,7 +58,7 @@
   float: right;
   padding: 0 20px 20px 0;
   height: 250px;
-  width: 200px;
+  /* width: 200px; */
 }
 #heroQuote{
   margin-left: auto;

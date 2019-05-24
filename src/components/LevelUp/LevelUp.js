@@ -33,11 +33,7 @@ class LevelUp extends React.Component {
     console.log(this.state.showHex);
     return(<div>
       {this.getHexagon()}
-      WelcomejfDzbbbbbbbbbbbbbbbbbbbbbbbbbb
-      <Route
-              path='/about'
-                render={(props) => <About {...props} liftStateUp={this.liftStateUp} theme={this.props.theme}/>}
-              />
+      Welcome
   </div>);
   }
 }

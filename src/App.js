@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route ,Redirect} from "react-router-dom";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import LevelUp from "./components/LevelUp/LevelUp";
@@ -42,18 +42,22 @@ import './App.css';
       <div className={this.getBackground()}>
   
         <div id="root">
-          <Router>
+          <Router >
             <Navbar liftStateUp={this.liftStateUp} />
             <div className="Mainrow">
             
   
   
             <Switch>
-            <Route
-              path='/'
-                render={(props) => <Home {...props} hex={this.getHexagon()} showHex={true} />}
+              <Route
+                path='/home'
+                render={(props) => <Home {...props} hex={this.getHexagon()} showHex={true} theme={this.state.theme}/>}
               />
-              <Route path="/about" component={About} /> 
+              <Route exact path="/" component={() => <Redirect to="/home" />}/>  
+              <Route
+              path='/about'
+                render={(props) => <About {...props}  theme={this.state.theme}/>}
+              />
               <Route path="/levelUp" 
               render={(props) => <Home {...props} hex={this.getHexagon()} showHex={true} />}
               />
