@@ -3,6 +3,8 @@ import HeroJourneyImage from "../../Themes/Default/Hero.PNG";
 import AdventureImage from "../../Themes/Default/adventure.PNG";
 import SideQuestImage from "../../Themes/Default/sideQuest.PNG";
 import LevelUpImage from "../../Themes/Default/Elf.jpg";
+import Hexagon from './../Hexagon/Hexagon';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // const Home = props => (
 // 	<div>This is a component called Home.</div>
 // );
@@ -14,6 +16,13 @@ class About extends Component {
   constructor(props){
     super(props);
     this.props.liftStateUp(false);
+  }
+
+  getHexagon(){
+    let type = this.props.theme+"Graduate";
+    return(
+     <Hexagon type ={type}></Hexagon>
+    );
   }
 
   render() {
@@ -69,7 +78,7 @@ class About extends Component {
                 achievements, rewards, goals, touchpoints and the wisdom you gain 
                 along the way.
 </p>
-</div>      
+</div> 
     </div>);
   }
 }

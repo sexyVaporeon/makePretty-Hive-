@@ -24,7 +24,6 @@ import './App.css';
      if (this.state.theme == 'Pokemon'){
        classes.push("PokemonBackground")
      }
-     console.log(classes);
      return classes.join(' ');
    }
    liftStateUp=(data)=>{
@@ -55,7 +54,9 @@ import './App.css';
                 render={(props) => <Home {...props} hex={this.getHexagon()} showHex={true} />}
               />
               <Route path="/about" component={About} /> 
-              <Route path="/levelUp" component={LevelUp} />
+              <Route path="/levelUp" 
+              render={(props) => <Home {...props} hex={this.getHexagon()} showHex={true} />}
+              />
             </Switch> 
             
   

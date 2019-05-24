@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./../About/About";
+import LevelUp from '../LevelUp/LevelUp';
 
 // const Home = props => (
 // 	<div>This is a component called Home.</div>
@@ -13,7 +14,7 @@ class Home extends React.Component {
   constructor(props){
     super(props);
     this.state={
-      showHex: this.props.showHex
+      showHex: true
     };
     
   }
@@ -27,13 +28,18 @@ class Home extends React.Component {
        return (this.props.hex);
      }
   }
-  render() {;
+
+  render() {
     return(<div>
       {this.getHexagon()}
       <Route
               path='/about'
-                render={(props) => <About {...props} liftStateUp={this.liftStateUp} />}
+                render={(props) => <About {...props} liftStateUp={this.liftStateUp} theme={this.props.theme}/>}
               />
+      <Route
+              path='/levelUp'
+                render={(props) => <LevelUp {...props} liftStateUp={this.liftStateUp} hex={this.props.hex} showHex={true} />}
+              />        
   </div>);
   }
 }

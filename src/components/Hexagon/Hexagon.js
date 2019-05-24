@@ -8,7 +8,6 @@ class Hexagon extends Component{
     }
 
     render(){
-        console.log(this.props.type)
         return(
             <div class="hexagon">
                 <div class= {this.props.type}></div>
