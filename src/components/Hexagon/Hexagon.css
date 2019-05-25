@@ -1,25 +1,27 @@
 .hexagon {
   display: inline-block;
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 84px;
+  height: 84px;
+  right: 30px;
+  margin-top: 10px; 
   background:black;
   box-sizing: border-box;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
+
 .PokemonGraduate {
   background-image: url('./../../Themes/Pokemon/graduate2.png');
   background-size: cover;
   position: absolute;
   top: 2px; /* equal to border thickness */
   left: 2px; /* equal to border thickness */
-  width: 146px; /* container height - (border thickness * 2) */
-  height: 146px; /* container height - (border thickness * 2) */
+  width: 80px; /* container height - (border thickness * 2) */
+  height: 80px; /* container height - (border thickness * 2) */
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
-
 
 .SpongebobGraduate{
   background-image: url('./../../Themes/SpongeBob/grad.jpg');
@@ -27,8 +29,8 @@
   position: absolute;
   top: 2px; /* equal to border thickness */
   left: 2px; /* equal to border thickness */
-  width: 146px; /* container height - (border thickness * 2) */
-  height: 146px; /* container height - (border thickness * 2) */
+  width: 80px; /* container height - (border thickness * 2) */
+  height: 80px; /* container height - (border thickness * 2) */
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
@@ -39,8 +41,8 @@
   position: absolute;
   top: 2px; /* equal to border thickness */
   left: 2px; /* equal to border thickness */
-  width: 146px; /* container height - (border thickness * 2) */
-  height: 146px; /* container height - (border thickness * 2) */
+  width: 80px; /* container height - (border thickness * 2) */
+  height: 80px; /* container height - (border thickness * 2) */
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
@@ -51,8 +53,8 @@
   position: absolute;
   top: 2px; /* equal to border thickness */
   left: 2px; /* equal to border thickness */
-  width: 146px; /* container height - (border thickness * 2) */
-  height: 146px; /* container height - (border thickness * 2) */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
