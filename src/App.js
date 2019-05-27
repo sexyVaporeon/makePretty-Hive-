@@ -59,7 +59,7 @@ import './App.css';
                 render={(props) => <About {...props}  theme={this.state.theme}/>}
               />
               <Route path="/levelUp" 
-              render={(props) => <LevelUp {...props} hex={this.getHexagon()} showHex={true} />}
+              render={(props) => <LevelUp {...props} hex={this.getHexagon()} showHex={true}  theme={this.state.theme}/>}
               />
             </Switch> 
             
