@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./../About/About";
 import HeroJourneyImage from "../../Themes/Default/Hero.PNG";
+import HexagonArea from '../HexagonArea/HexagonArea';
 
 // const Home = props => (
 // 	<div>This is a component called Home.</div>
@@ -16,7 +17,7 @@ class LevelUp extends React.Component {
     this.state={
       showHex:true
     }
-    this.props.liftStateUp(false);
+    //this.props.liftStateUp(false);
   }
 
   liftStateUp=(data)=>{
@@ -29,12 +30,18 @@ class LevelUp extends React.Component {
        return (this.props.hex);
      }
   }
-  render() {
+
+  render = () => {
     console.log(this.state.showHex);
-    return(<div>
-      {this.getHexagon()}
-      Welcome
-  </div>);
+    return(
+    <div>
+      <HexagonArea hex={this.getHexagon()} name= {"C#"} />
+      <HexagonArea hex={this.getHexagon()} name= {"Java"}/>
+      <HexagonArea hex={this.getHexagon()} name= {"Web"}/>
+      <HexagonArea hex={this.getHexagon()} name= {"Design"}/>
+      <HexagonArea hex={this.getHexagon()} name= {"Database"}/>
+    </div>
+    );
   }
 }
 

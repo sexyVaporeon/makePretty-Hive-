@@ -1,0 +1,8 @@
+.sized {
+  font-size: 20px;
+  margin-left: 500px; 
+  position: relative;
+}
+.sized :hover {
+  margin-left: 1.5px;
+}
