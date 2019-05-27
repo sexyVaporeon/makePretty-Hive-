@@ -3,10 +3,18 @@ import HeroJourneyImage from "../../Themes/Default/Hero.PNG";
 import AdventureImage from "../../Themes/Default/adventure.PNG";
 import SideQuestImage from "../../Themes/Default/sideQuest.PNG";
 import LevelUpImage from "../../Themes/Default/Elf.jpg";
+//Pokemon images
 import Bulbasaur from "../../Themes/Pokemon/1.jpg";
 import Charmandar from "../../Themes/Pokemon/2.jpg";
 import Squirtle from "../../Themes/Pokemon/3.jpg";
 import Eevee from "../../Themes/Pokemon/4.png";
+//Spongebob images
+import MrKrabs from "../../Themes/SpongeBob/MrKrabs.png";
+import Patrick from "../../Themes/SpongeBob/patrick.png";
+import Sandy from "../../Themes/SpongeBob/spongebob.png";
+import Squidward from "../../Themes/SpongeBob/squidward.png";
+
+
 // const Home = props => (
 // 	<div>This is a component called Home.</div>
 // );
@@ -24,6 +32,9 @@ class About extends Component {
     if(this.props.theme=="Pokemon"){
         return(Bulbasaur);
     } 
+    else if(this.props.theme =="Spongebob"){
+      return(Patrick)
+    }
     return (HeroJourneyImage);
   }
 
@@ -31,6 +42,9 @@ class About extends Component {
     if(this.props.theme=="Pokemon"){
       return(Charmandar);
   } 
+  else if(this.props.theme =="Spongebob"){
+    return(Sandy)
+  }
   return (AdventureImage);
   }
 
@@ -38,6 +52,9 @@ class About extends Component {
     if(this.props.theme=="Pokemon"){
       return(Squirtle);
   } 
+  else if(this.props.theme =="Spongebob"){
+    return(MrKrabs)
+  }
   return (LevelUpImage);
   }
 
@@ -45,6 +62,9 @@ class About extends Component {
     if(this.props.theme=="Pokemon"){
       return(Eevee);
   } 
+  else if(this.props.theme =="Spongebob"){
+    return(Squidward)
+  }
   return (SideQuestImage);
   }
 

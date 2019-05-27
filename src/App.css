@@ -102,6 +102,14 @@ float: center;
     background-attachment: scroll;
 }
 
+.SpongebobBackground{
+  background-image: url('./Themes/SpongeBob/background1.jpg');
+    display: inline-block;
+    background-size: 100% 100%; 
+    color: rgb(20, 17, 17);
+    background-attachment: scroll;
+}
+
 .space{
   height: 57vh;
   width: 200vh;
