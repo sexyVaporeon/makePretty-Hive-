@@ -82,3 +82,99 @@
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
+
+.PokemonC{
+  background-image: url('./../../Themes/Pokemon/csharp.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.DefaultC{
+  background-image: url('./../../Themes/Default/csharp.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.DefaultJava{
+  background-image: url('./../../Themes/Default/java.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.DefaultDesign{
+  background-image: url('./../../Themes/Default/design.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.DefaultDatabase{
+  background-image: url('./../../Themes/Default/database.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.PokemonJava{
+  background-image: url('./../../Themes/Pokemon/Sunkern.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.PokemonDesign{
+  background-image: url('./../../Themes/Pokemon/design.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.PokemonDatabase{
+  background-image: url('./../../Themes/Pokemon/database.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
