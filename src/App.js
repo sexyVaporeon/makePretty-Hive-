@@ -24,6 +24,9 @@ import './App.css';
      if (this.state.theme == 'Pokemon'){
        classes.push("PokemonBackground")
      }
+     else if (this.state.theme == 'Spongebob'){
+       classes.push("SpongebobBackground")
+     }
      return classes.join(' ');
    }
    liftStateUp=(data)=>{
