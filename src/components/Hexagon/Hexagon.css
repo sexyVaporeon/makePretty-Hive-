@@ -84,7 +84,7 @@
 }
 
 .PokemonC{
-  background-image: url('./../../Themes/Pokemon/csharp.png');
+  background-image: url('./../../Themes/Pokemon/csharp.gif');
   background-size: cover;
   position: absolute;
   top: 2px; /* equal to border thickness */
