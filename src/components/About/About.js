@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import HeroJourneyImage from "../../Themes/Default/Hero.PNG";
-import AdventureImage from "../../Themes/Default/adventure.PNG";
-import SideQuestImage from "../../Themes/Default/sideQuest.PNG";
-import LevelUpImage from "../../Themes/Default/Elf.jpg";
+import HeroJourneyImage from "../../Themes/Default/Hero-removebg[2044].png";
+import AdventureImage from "../../Themes/Default/adventure_removebg.png";
+import SideQuestImage from "../../Themes/Default/sideQuest-removebg[2045].png";
+import LevelUpImage from "../../Themes/Default/Elf-removebg[2043].png";
 //Pokemon images
 import Bulbasaur from "../../Themes/Pokemon/1.jpg";
 import Charmandar from "../../Themes/Pokemon/2.jpg";

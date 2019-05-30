@@ -111,11 +111,26 @@ float: center;
 }
 
 .AvengersBackground{
-  background-image: url('./Themes/Avengers/Background1.jpg');
+  background-image: url('./Themes/Avengers/background.jpg');
     display: inline-block;
     background-size: 100% 100%; 
     color: aqua;
     background-attachment: scroll;
+}
+
+.DarkBackground{
+  background-color:#003366;
+  color: aliceblue;
+  display: inline-block;
+  position: relative;
+  padding:0;
+  margin:0;
+
+  top:0;
+  left:0;
+
+  width: 100vw;
+  height: 100%;
 }
 
 .space{

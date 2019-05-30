@@ -2,7 +2,8 @@ const themes =[
     'Default',
     'Pokemon',
     'Spongebob',
-    'Avengers'
+    'Avengers',
+    'Dark'
 ]
 
 export default themes;

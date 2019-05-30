@@ -28,6 +28,8 @@ import './App.css';
        classes.push("SpongebobBackground")
      } else if (this.state.theme == 'Avengers'){
        classes.push('AvengersBackground')
+     } else if (this.state.theme =="Dark"){
+       classes.push("DarkBackground")
      }
      return classes.join(' ');
    }
