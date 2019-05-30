@@ -29,7 +29,7 @@ class Home extends React.Component {
   addNotification() {
 
     //heading
-    var today = new Date('2019-06-15');
+    var today = new Date();
     var heading = "Notice of Next Meeting";
     
     //check
