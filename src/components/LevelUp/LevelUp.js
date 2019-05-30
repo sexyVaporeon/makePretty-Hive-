@@ -42,11 +42,11 @@ class LevelUp extends React.Component {
     console.log(this.state.showHex);
     return(
     <div>
-      <HexagonArea hex={this.getHexagon('C')} name= {"C#"} />
-      <HexagonArea hex={this.getHexagon('Java')} name= {"Java"}/>
-      <HexagonArea hex={this.getHexagon('Web')} name= {"Web"}/>
-      <HexagonArea hex={this.getHexagon('Design')} name= {"Design"}/>
-      <HexagonArea hex={this.getHexagon('Database')} name= {"Database"}/>
+      <HexagonArea hex={this.getHexagon('C')} name= {"C#"} colour={this.props.colour}/>
+      <HexagonArea hex={this.getHexagon('Java')} name= {"Java"} colour={this.props.colour}/>
+      <HexagonArea hex={this.getHexagon('Web')} name= {"Web"} colour={this.props.colour}/>
+      <HexagonArea hex={this.getHexagon('Design')} name= {"Design"} colour={this.props.colour}/>
+      <HexagonArea hex={this.getHexagon('Database')} name= {"Database"} colour={this.props.colour}/>
     </div>
     );
   }

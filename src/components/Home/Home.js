@@ -34,7 +34,7 @@ class Home extends React.Component {
   render() {
     return(<div>
       <div>
-      <Link to="/levelUp"><HexagonArea hex={this.getHexagon()} name= {"Graduate Track"}/></Link>      
+      <Link to="/levelUp"><HexagonArea hex={this.getHexagon()} name= {"Graduate Track"} colour={this.props.colour}/></Link>      
       </div>
       <Route
               path='/about'
@@ -42,7 +42,7 @@ class Home extends React.Component {
               />
       <Route
               path='/levelUp'
-                render={(props) => <LevelUp {...props} liftStateUp={this.liftStateUp} hex={this.props.hex} showHex={true}  theme={this.props.theme}/>}
+                render={(props) => <LevelUp {...props} liftStateUp={this.liftStateUp} hex={this.props.hex} showHex={true}  theme={this.props.theme} colour={this.props.colour}/>}
               />        
   </div>);
   }
