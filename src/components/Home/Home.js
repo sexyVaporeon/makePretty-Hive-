@@ -21,9 +21,7 @@ class Home extends React.Component {
       showHex: true
     };
     this.addNotification = this.addNotification.bind(this);
-    this.notificationDOMRef = React.createRef();
-    console.log(this.props.theme)
-    
+    this.notificationDOMRef = React.createRef();    
   }
 
   addNotification() {
@@ -104,7 +102,6 @@ class Home extends React.Component {
 
 <div class="clearfix">
 <p id="heroQuote"><br></br>
-{/* <img id="imageHeroLeft" src={HeroJourneyImage} alt="The hero journey to the start of the course"/>  */}
 <h1 id="homeHeader">Schedule 2019</h1>
             List of events that will occur for the 2019 schedule, please see below for the following date and time of occurance.
             Languages that will be learnt is C#, Java, Design, Web and Databases.
@@ -253,9 +250,6 @@ Quest focuses on relational databases with a specific focus on database design
     );
   }
 }
-// const HomePropTypes = {
-//  // always use prop types!
-// };
-// Home.propTypes = HomePropTypes;
+
 export default Home;
 
