@@ -35,9 +35,10 @@ class Navbar extends React.Component {
   render() {
     return ( 
 				<div className="navigation-bar">
-					<div id="navigation-container">
-					<StackPanel horizontalAlignment="center" verticalAlignment="center" orientation="horizontal"  padding="3%">
+					<div className="navigation-container">
+					<StackPanel horizontalAlignment="center" verticalAlignment="center" orientation="horizontal"  padding="2%">
 						<div className="image" ></div>
+						<div className = "Space"></div>
 						<div className="menu">
 							<ul id="nav">
 									<li id="nav-Home"><Link to="/home">Home</Link></li>
@@ -46,6 +47,7 @@ class Navbar extends React.Component {
 									<li id="nav-About"><Link to="/about">About</Link></li>
 							</ul>
 							</div>	
+							<div className = "Space"></div>
 							<div >
 							<SelectBox options={themes} liftStateUp={this.liftStateUp}></SelectBox>
 							</div>
