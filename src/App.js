@@ -26,6 +26,8 @@ import './App.css';
      }
      else if (this.state.theme == 'Spongebob'){
        classes.push("SpongebobBackground")
+     } else if (this.state.theme == 'Avengers'){
+       classes.push('AvengersBackground')
      }
      return classes.join(' ');
    }

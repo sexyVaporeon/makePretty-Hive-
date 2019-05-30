@@ -178,3 +178,123 @@
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
+
+.SpongebobC{
+  background-image: url('./../../Themes/SpongeBob/csharp.jpeg');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.SpongebobJava{
+  background-image: url('./../../Themes/SpongeBob/java.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.SpongebobWeb{
+  background-image: url('./../../Themes/SpongeBob/web.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.SpongebobDesign{
+  background-image: url('./../../Themes/SpongeBob/design.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.SpongebobDatabase{
+  background-image: url('./../../Themes/SpongeBob/database.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.AvengersC{
+  background-image: url('./../../Themes/Avengers/Avengers-Black-Widow-icon.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height: 80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.AvengersJava{
+  background-image: url('./../../Themes/Avengers/Avengers-Captain-America-icon.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height: 80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.AvengersWeb{
+  background-image: url('./../../Themes/Avengers/Avengers-Iron-Man-icon.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height: 80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.AvengersDesign{
+  background-image: url('./../../Themes/Avengers/Avengers-Thor-icon.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height: 80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.AvengersDatabase{
+  background-image: url('./../../Themes/Avengers/Avengers-Hulk-icon.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height: 80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}

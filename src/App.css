@@ -90,7 +90,7 @@ float: center;
     top:0;
     left:0;
 
-    width: 100;
+    width: 100vw;
     height: 100%;
 }
 
@@ -107,6 +107,14 @@ float: center;
     display: inline-block;
     background-size: 100% 100%; 
     color: rgb(20, 17, 17);
+    background-attachment: scroll;
+}
+
+.AvengersBackground{
+  background-image: url('./Themes/Avengers/Background1.jpg');
+    display: inline-block;
+    background-size: 100% 100%; 
+    color: aqua;
     background-attachment: scroll;
 }
 

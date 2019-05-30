@@ -29,7 +29,6 @@ class LevelUp extends React.Component {
     console.log(name);
      if(this.state.showHex){
        if(name){
-         console.log('fdsgSRF');
         let type = this.props.theme+name;
         return(
          <Hexagon type ={type}></Hexagon>

@@ -13,6 +13,11 @@ import MrKrabs from "../../Themes/SpongeBob/MrKrabs.png";
 import Patrick from "../../Themes/SpongeBob/patrick.png";
 import Sandy from "../../Themes/SpongeBob/spongebob.png";
 import Squidward from "../../Themes/SpongeBob/squidward.png";
+//Avengers images
+import Hawkeye from "../../Themes/Avengers/Hawkeye.png";
+import Loki from "../../Themes/Avengers/loki.png";
+import Thanos from "../../Themes/Avengers/thanos.png";   
+import Scarlet from "../../Themes/Avengers/scarlet.png";                                     
 
 
 // const Home = props => (
@@ -33,7 +38,9 @@ class About extends Component {
         return(Bulbasaur);
     } 
     else if(this.props.theme =="Spongebob"){
-      return(Patrick)
+      return(Patrick);
+    }else if(this.props.theme == "Avengers"){
+      return(Hawkeye);
     }
     return (HeroJourneyImage);
   }
@@ -43,7 +50,9 @@ class About extends Component {
       return(Charmandar);
   } 
   else if(this.props.theme =="Spongebob"){
-    return(Sandy)
+    return(Sandy);
+  }else if(this.props.theme == "Avengers"){
+    return(Loki);
   }
   return (AdventureImage);
   }
@@ -53,7 +62,9 @@ class About extends Component {
       return(Squirtle);
   } 
   else if(this.props.theme =="Spongebob"){
-    return(MrKrabs)
+    return(MrKrabs);
+  }else if(this.props.theme == "Avengers"){
+    return(Thanos);
   }
   return (LevelUpImage);
   }
@@ -63,7 +74,9 @@ class About extends Component {
       return(Eevee);
   } 
   else if(this.props.theme =="Spongebob"){
-    return(Squidward)
+    return(Squidward);
+  } else if(this.props.theme =="Avengers"){
+    return(Scarlet);
   }
   return (SideQuestImage);
   }
