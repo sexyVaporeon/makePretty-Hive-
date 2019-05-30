@@ -14,10 +14,17 @@ import './App.css';
  class App extends Component {
    constructor(props){
      super(props);
+     if (localStorage.getItem("theme") === null)
      this.state={
-       theme: 'Default'
+       theme: 'Default',
      };
+
+    else 
+      this.state ={
+        theme: localStorage.getItem('theme')
+      };
      this.colour = "";
+     localStorage.setItem('theme', this.state.theme)
    }
 
    getBackground(){
@@ -25,15 +32,19 @@ import './App.css';
      if (this.state.theme == 'Pokemon'){
        classes.push("PokemonBackground")
        this.colour = "red";
+       localStorage.setItem('theme',this.state.theme)
      }
      else if (this.state.theme == 'Spongebob'){
        classes.push("SpongebobBackground")
        this.colour = "rgb(20, 17, 17)";
+       localStorage.setItem('theme',this.state.theme)
      } else if (this.state.theme == 'Avengers'){
        classes.push('AvengersBackground')
        this.colour = "aqua"
+       localStorage.setItem('theme',this.state.theme)
      } else if (this.state.theme =="Dark"){
        classes.push("DarkBackground")
+       localStorage.setItem('theme',this.state.theme)
        
      }
      console.log(this.colour);
