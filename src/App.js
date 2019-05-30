@@ -45,8 +45,8 @@ import './App.css';
      } else if (this.state.theme =="Dark"){
        classes.push("DarkBackground")
        localStorage.setItem('theme',this.state.theme)
-       
-     }
+       this.colour ="#003366";
+     } else this.colour ="black";
      console.log(this.colour);
      return classes.join(' ');
    }
