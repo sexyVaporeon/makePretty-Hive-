@@ -29,18 +29,31 @@ class Home extends React.Component {
   addNotification() {
 
     //heading
-    var today = new Date();
-    var currentDate = String(today.toUTCString()); //get the current date to display
+    var today = new Date('2019-06-15');
     var heading = "Notice of Next Meeting";
     
     //check
-    var day = String(today.toUTCString()).substring(5, 7);
-    var month = String(today.toUTCString()).substring(8, 11);
-    var check = "30th May 2019 Grads at BBD from 08:30 to 16:30";
+    var check = "1";
 
-    //compare
-    var monthCheck = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var dates = [new Date('2019-05-31'), new Date('2019-06-14'), new Date('2019-07-04'), new Date('2019-07-05')
+    ,new Date('2019-07-19') ,new Date('2019-08-01') ,new Date('2019-08-02')]
+
+    for(var i=0;i<dates.length;i++) {
+      
+      if(today<=dates[i]) {
+        check = ("Your next grad program meeting is on the "+String(dates[i].toUTCString()));
+        console.log(String(today.toUTCString()));
+        console.log(String(dates[i].toUTCString()));
+        console.log(i+"=====================================================================================================");
+        i = dates.length;
+      }
+      else{
+        check = String(dates[i].toUTCString());
+        console.log(String(dates[i].toUTCString()));
+        console.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        
+      }
+    }
 
     //load dates
 
