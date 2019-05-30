@@ -42,7 +42,7 @@ class Home extends React.Component {
               />
       <Route
               path='/levelUp'
-                render={(props) => <LevelUp {...props} liftStateUp={this.liftStateUp} hex={this.props.hex} showHex={true}  theme={this.props.theme}/>}
+                render={(props) => <LevelUp {...props} liftStateUp={this.liftStateUp} hex={this.props.hex} showHex={true}  theme={this.props.theme} colour={this.props.colour}/>}
               />        
   </div>);
   }
