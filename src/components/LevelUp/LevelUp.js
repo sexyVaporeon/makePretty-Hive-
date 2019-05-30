@@ -27,20 +27,22 @@ class LevelUp extends React.Component {
   }
 
   getHexagon(name){
-    console.log(name);
+    let type ="";
      if(this.state.showHex){
-       if(name){
-        let type = this.props.theme+name;
-        return(
-         <Hexagon type ={type}></Hexagon>
-        );
+       if(name && this.props.theme !== 'Dark'){
+         type = this.props.theme+name;
+       } else{
+          type = "Default"+name;
        }
-       return (this.props.hex);
+       console.log(type);
+      return( <Hexagon type={type}/>);
      }
+     return (this.props.hex);
   }
 
   render = () => {
     console.log(this.state.showHex);
+    console.log(this.props.colour);
     return(
     <div>
       <HexagonArea hex={this.getHexagon('C')} name= {"C#"} colour={this.props.colour}/>

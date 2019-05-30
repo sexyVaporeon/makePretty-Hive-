@@ -42,16 +42,10 @@ class Home extends React.Component {
       
       if(today<=dates[i]) {
         check = ("Your next grad program meeting is on the "+String(dates[i].toUTCString()));
-        console.log(String(today.toUTCString()));
-        console.log(String(dates[i].toUTCString()));
-        console.log(i+"=====================================================================================================");
         i = dates.length;
       }
       else{
         check = String(dates[i].toUTCString());
-        console.log(String(dates[i].toUTCString()));
-        console.log("++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        
       }
     }
 
@@ -115,13 +109,6 @@ class Home extends React.Component {
             List of events that will occur for the 2019 schedule, please see below for the following date and time of occurance.
             Languages that will be learnt is C#, Java, Design, Web and Databases.
 </p>
-</div>
-<div id="heroQuote">
-<img src="https://i.pinimg.com/originals/97/cf/2c/97cf2ccd659ef9b00dd0aa15137130ec.png" id="programmingLanguages" alt="c-sharp logo image"></img>
-<img src="https://icon2.kisspng.com/20180810/cxt/kisspng-oracle-certified-professional-java-se-programmer-c-grails-development-groovy-development-grails-d-5b6dde2478a285.7026776415339269484941.jpg" id="programmingLanguages" alt="java logo image"></img>
-<img src="https://banner2.kisspng.com/20180320/dde/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c840061922.801355261521535040025.jpg" id="programmingLanguages" alt="Web logo image"></img>
-<img src="https://www.dragon1.com/images/designpatterns02.jpg" id="programmingLanguages" alt="Design pattern logo image"></img>
-<img src="https://st4.depositphotos.com/18664664/21427/v/1600/depositphotos_214279934-stock-illustration-database-vector-icon-isolated-on.jpg" id="programmingLanguages" alt="Database logo image"></img>
 </div>
 <div class="clearfix">
 <p id="heroQuote">

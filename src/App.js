@@ -45,7 +45,7 @@ import './App.css';
      } else if (this.state.theme =="Dark"){
        classes.push("DarkBackground")
        localStorage.setItem('theme',this.state.theme)
-       this.colour ="#003366";
+       this.colour ="white";
      } else {
        this.colour ="black";
        localStorage.setItem('theme',this.state.theme)
