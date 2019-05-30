@@ -34,7 +34,7 @@ class Home extends React.Component {
   render() {
     return(<div>
       <div>
-      <Link to="/levelUp"><HexagonArea hex={this.getHexagon()} name= {"Graduate Track"}/></Link>      
+      <Link to="/levelUp"><HexagonArea hex={this.getHexagon()} name= {"Graduate Track"} colour={this.props.colour}/></Link>      
       </div>
       <Route
               path='/about'

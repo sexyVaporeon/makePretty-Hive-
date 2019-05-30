@@ -17,18 +17,23 @@ import './App.css';
      this.state={
        theme: 'Default'
      };
+     this.colour = "";
    }
 
    getBackground(){
      let classes =["background"];
      if (this.state.theme == 'Pokemon'){
        classes.push("PokemonBackground")
+       this.colour = "red";
      }
      else if (this.state.theme == 'Spongebob'){
        classes.push("SpongebobBackground")
+       this.colour = "rgb(20, 17, 17)";
      } else if (this.state.theme == 'Avengers'){
        classes.push('AvengersBackground')
+       this.colour = "aqua"
      }
+     console.log(this.colour);
      return classes.join(' ');
    }
    liftStateUp=(data)=>{
@@ -56,7 +61,7 @@ import './App.css';
             <Switch>
               <Route
                 path='/home'
-                render={(props) => <Home {...props} hex={this.getHexagon()} showHex={true} theme={this.state.theme}/>}
+                render={(props) => <Home {...props} hex={this.getHexagon()} showHex={true} theme={this.state.theme} colour={this.colour}/>}
               />
               <Route exact path="/" component={() => <Redirect to="/home" />}/>  
               <Route
@@ -64,7 +69,7 @@ import './App.css';
                 render={(props) => <About {...props}  theme={this.state.theme}/>}
               />
               <Route path="/levelUp" 
-              render={(props) => <LevelUp {...props} hex={this.getHexagon()} showHex={true}  theme={this.state.theme}/>}
+              render={(props) => <LevelUp {...props} hex={this.getHexagon()} showHex={true}  theme={this.state.theme} colour={this.colour}/>}
               />
             </Switch> 
             
