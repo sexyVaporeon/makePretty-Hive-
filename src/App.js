@@ -46,8 +46,11 @@ import './App.css';
        classes.push("DarkBackground")
        localStorage.setItem('theme',this.state.theme)
        this.colour ="#003366";
-     } else this.colour ="black";
-     console.log(this.colour);
+     } else {
+       this.colour ="black";
+       localStorage.setItem('theme',this.state.theme)
+      console.log(this.colour);}
+
      return classes.join(' ');
    }
    liftStateUp=(data)=>{
