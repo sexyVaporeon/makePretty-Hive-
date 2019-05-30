@@ -73,7 +73,7 @@ class Home extends React.Component {
       <div>
         <div>
       <div>
-      <Link to="/levelUp"><HexagonArea hex={this.getHexagon()} name= {"Graduate Track"}/></Link>    
+      <Link to="/levelUp"><HexagonArea hex={this.getHexagon()} name= {"Graduate Track"} colour={this.props.colour}/></Link>    
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>  
       </div>
       <Route
@@ -82,7 +82,7 @@ class Home extends React.Component {
               />
       <Route
               path='/levelUp'
-                render={(props) => <LevelUp {...props} liftStateUp={this.liftStateUp} hex={this.props.hex} showHex={true}  theme={this.props.theme}/>}
+                render={(props) => <LevelUp {...props} liftStateUp={this.liftStateUp} hex={this.props.hex} showHex={true}  theme={this.props.theme} colour={this.props.colour}/>}
               />        
   </div>
   

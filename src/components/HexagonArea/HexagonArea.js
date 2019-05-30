@@ -22,9 +22,12 @@ class HexagonArea extends React.Component {
     render = () => {
   
       return (
-        <div class = "sized">
+        <div class = "sized"  style={{color: this.props.colour}}>
           {this.getHexagon()}
+        <div class = "hexagonText">
           {this.props.name}
+        </div>
+          
         </div>
         );
     }

@@ -59,6 +59,18 @@
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
+.DarkGraduate{
+  background-image: url('./../../Themes/Default/Graduate.png');
+  background-size: cover;
+  position: absolute;
+  top: 2px; /* equal to border thickness */
+  left: 2px; /* equal to border thickness */
+  width: 80px; /* container height - (border thickness * 2) */
+  height:80px; /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
 .PokemonWeb{
   background-image: url('./../../Themes/Pokemon/web.jpg');
   background-size: cover;

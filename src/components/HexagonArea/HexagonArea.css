@@ -1,8 +1,18 @@
 .sized {
   font-size: 20px;
-  margin-left: 500px; 
+  margin-left: 500px;
+  
   position: relative;
 }
 .sized :hover {
   margin-left: 1.5px;
+}
+
+.hexagonText {
+  
+  position: absolute;
+  left: 110px;
+  bottom: 35px;
+  
+  
 }
