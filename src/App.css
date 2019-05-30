@@ -122,3 +122,35 @@ float: center;
   height: 57vh;
   width: 200vh;
 }
+
+/*Main content*/
+.clearfix{
+  overflow: auto;
+}
+#homeHeader{
+  text-align: justify;
+}
+#programmingLanguages{
+  height: 45px;
+  width: 45px;
+  margin-right: auto;
+}
+#btnHomeNotice{
+  float: right;
+  margin-right: 100px;
+}
+#textNotice{
+  padding-top: 50px;
+  margin-left: 140px;
+  margin-right: auto;
+  width: 70%;
+text-align: justify, center;
+text-justify: inter-word;
+font-family: times, serif; font-size:14pt; font-style:italic;
+float: center;
+}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+#handControl{
+  float: right;
+}
