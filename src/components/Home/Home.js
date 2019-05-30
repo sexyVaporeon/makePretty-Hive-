@@ -21,28 +21,33 @@ class Home extends React.Component {
       showHex: true
     };
     this.addNotification = this.addNotification.bind(this);
-    this.notificationDOMRef = React.createRef();
-    console.log(this.props.theme)
-    
+    this.notificationDOMRef = React.createRef();    
   }
 
   addNotification() {
 
-    //heading
     var today = new Date();
-    var currentDate = String(today.toUTCString()); //get the current date to display
     var heading = "Notice of Next Meeting";
-    
-    //check
-    var day = String(today.toUTCString()).substring(5, 7);
-    var month = String(today.toUTCString()).substring(8, 11);
-    var check = "30th May 2019 Grads at BBD from 08:30 to 16:30";
 
-    //compare
-    var monthCheck = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var check = "1";
 
-    //load dates
+    var dates = [new Date('2019-05-31'), new Date('2019-06-14'), new Date('2019-07-04'), new Date('2019-07-05')
+    ,new Date('2019-07-19') ,new Date('2019-08-01') ,new Date('2019-08-02')]
+
+    for(var i=0;i<dates.length;i++) {
+      
+      if(today<=dates[i]) {
+        var originalDate = String(dates[i].toUTCString());
+        var index = originalDate.indexOf(today.getFullYear());
+        var subString = originalDate.substr(0,index+4);
+        check = ("Your next grad program meeting is on the "+subString);
+        i = dates.length;
+
+      }
+      else{
+        check = String(dates[i].toUTCString());
+      }
+    }
 
     this.notificationDOMRef.current.addNotification({
       
@@ -97,18 +102,10 @@ class Home extends React.Component {
 
 <div class="clearfix">
 <p id="heroQuote"><br></br>
-{/* <img id="imageHeroLeft" src={HeroJourneyImage} alt="The hero journey to the start of the course"/>  */}
 <h1 id="homeHeader">Schedule 2019</h1>
             List of events that will occur for the 2019 schedule, please see below for the following date and time of occurance.
             Languages that will be learnt is C#, Java, Design, Web and Databases.
 </p>
-</div>
-<div id="heroQuote">
-<img src="https://i.pinimg.com/originals/97/cf/2c/97cf2ccd659ef9b00dd0aa15137130ec.png" id="programmingLanguages" alt="c-sharp logo image"></img>
-<img src="https://icon2.kisspng.com/20180810/cxt/kisspng-oracle-certified-professional-java-se-programmer-c-grails-development-groovy-development-grails-d-5b6dde2478a285.7026776415339269484941.jpg" id="programmingLanguages" alt="java logo image"></img>
-<img src="https://banner2.kisspng.com/20180320/dde/kisspng-web-development-html-css3-canvas-element-web-desig-w3c-html5-logo-5ab0c840061922.801355261521535040025.jpg" id="programmingLanguages" alt="Web logo image"></img>
-<img src="https://www.dragon1.com/images/designpatterns02.jpg" id="programmingLanguages" alt="Design pattern logo image"></img>
-<img src="https://st4.depositphotos.com/18664664/21427/v/1600/depositphotos_214279934-stock-illustration-database-vector-icon-isolated-on.jpg" id="programmingLanguages" alt="Database logo image"></img>
 </div>
 <div class="clearfix">
 <p id="heroQuote">
@@ -253,9 +250,6 @@ Quest focuses on relational databases with a specific focus on database design
     );
   }
 }
-// const HomePropTypes = {
-//  // always use prop types!
-// };
-// Home.propTypes = HomePropTypes;
+
 export default Home;
 

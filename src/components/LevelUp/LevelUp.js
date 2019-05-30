@@ -4,21 +4,14 @@ import About from "./../About/About";
 import HeroJourneyImage from "../../Themes/Default/Hero.PNG";
 import HexagonArea from '../HexagonArea/HexagonArea';
 import Hexagon from './../Hexagon/Hexagon';
+import './LevelUp.css';
 
-// const Home = props => (
-// 	<div>This is a component called Home.</div>
-// );
-
-// todo: Unless you need to use lifecycle methods or local state,
-// write your component in functional form as above and delete
-// this section. 
 class LevelUp extends React.Component {
   constructor(props){
     super(props);
     this.state={
       showHex:true
     }
-    //this.props.liftStateUp(false);
   }
 
   liftStateUp=(data)=>{
@@ -26,20 +19,19 @@ class LevelUp extends React.Component {
   }
 
   getHexagon(name){
-    console.log(name);
+    let type ="";
      if(this.state.showHex){
-       if(name){
-        let type = this.props.theme+name;
-        return(
-         <Hexagon type ={type}></Hexagon>
-        );
+       if(name && this.props.theme !== 'Dark'){
+         type = this.props.theme+name;
+       } else{
+          type = "Default"+name;
        }
-       return (this.props.hex);
+      return( <Hexagon type={type}/>);
      }
+     return (this.props.hex);
   }
 
   render = () => {
-    console.log(this.state.showHex);
     return(
     <div>
       <HexagonArea hex={this.getHexagon('C')} name= {"C#"} colour={this.props.colour}/>
@@ -47,15 +39,10 @@ class LevelUp extends React.Component {
       <HexagonArea hex={this.getHexagon('Web')} name= {"Web"} colour={this.props.colour}/>
       <HexagonArea hex={this.getHexagon('Design')} name= {"Design"} colour={this.props.colour}/>
       <HexagonArea hex={this.getHexagon('Database')} name= {"Database"} colour={this.props.colour}/>
+      <div className="space"></div>
     </div>
     );
   }
 }
-
-// const HomePropTypes = {
-// 	// always use prop types!
-// };
-
-// Home.propTypes = HomePropTypes;
 
 export default LevelUp;

@@ -19,14 +19,6 @@ import Loki from "../../Themes/Avengers/loki.png";
 import Thanos from "../../Themes/Avengers/thanos.png";   
 import Scarlet from "../../Themes/Avengers/scarlet.png";                                     
 
-
-// const Home = props => (
-// 	<div>This is a component called Home.</div>
-// );
-
-// todo: Unless you need to use lifecycle methods or local state,
-// write your component in functional form as above and delete
-// this section. 
 class About extends Component {
   constructor(props){
     super(props);
@@ -138,11 +130,5 @@ class About extends Component {
     </div>);
   }
 }
-
-// const HomePropTypes = {
-// 	// always use prop types!
-// };
-
-// Home.propTypes = HomePropTypes;
 
 export default About;

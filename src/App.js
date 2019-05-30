@@ -6,9 +6,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import LevelUp from "./components/LevelUp/LevelUp";
 import ScrollUpButton from "react-scroll-up-button";
-import ReactSidebar from './components/ReactSidebar/ReactSidebar';
 import Hexagon from './components/Hexagon/Hexagon';
-// import logo from 'src/Icon/hive.PNG';
 import './App.css';
 
  class App extends Component {
@@ -45,11 +43,11 @@ import './App.css';
      } else if (this.state.theme =="Dark"){
        classes.push("DarkBackground")
        localStorage.setItem('theme',this.state.theme)
-       this.colour ="#003366";
+       this.colour ="white";
      } else {
        this.colour ="black";
-       localStorage.setItem('theme',this.state.theme)
-      console.log(this.colour);}
+       localStorage.setItem('theme',this.state.theme);
+      }
 
      return classes.join(' ');
    }
@@ -96,11 +94,8 @@ import './App.css';
   
             </div>
           </Router>
-          {/* {this.getHexagon()}
-          <hr/> */}
           <ScrollUpButton/>
         </div>
-        <div className="space"></div>
         <Footer/>
       </div>
     );
