@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route ,Redirect} from "react-router-dom";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import LevelUp from "./components/LevelUp/LevelUp";
@@ -11,35 +11,75 @@ import Hexagon from './components/Hexagon/Hexagon';
 // import logo from 'src/Icon/hive.PNG';
 import './App.css';
 
-function App() {
-  return (
-    <div className="background">
+ class App extends Component {
+   constructor(props){
+     super(props);
+     this.state={
+       theme: 'Default'
+     };
+   }
 
-      <div id="root">
-        <Router>
-          <Navbar />
-          <div className="Mainrow">
-          
-          <ReactSidebar/>
+   getBackground(){
+     let classes =["background"];
+     if (this.state.theme == 'Pokemon'){
+       classes.push("PokemonBackground")
+     }
+     else if (this.state.theme == 'Spongebob'){
+       classes.push("SpongebobBackground")
+     } else if (this.state.theme == 'Avengers'){
+       classes.push('AvengersBackground')
+     }
+     return classes.join(' ');
+   }
+   liftStateUp=(data)=>{
+     this.setState({theme:data});
+   }
 
+   getHexagon(){
+     let type = this.state.theme+"Graduate";
+     return(
+      <Hexagon type ={type}></Hexagon>
+     );
+   }
 
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/about/" component={About} />
-            <Route path="/levelUp/" component={LevelUp} />
-          </Switch> 
-          
-
-          </div>
-        </Router>
-        <Hexagon type ="DefaultGraduate"></Hexagon>
-        <hr/>
-        <ScrollUpButton/>
+   render(){
+    return (
+      <div className={this.getBackground()}>
+  
+        <div id="root">
+          <Router >
+            <Navbar liftStateUp={this.liftStateUp} />
+            <div className="Mainrow">
+            
+  
+  
+            <Switch>
+              <Route
+                path='/home'
+                render={(props) => <Home {...props} hex={this.getHexagon()} showHex={true} theme={this.state.theme}/>}
+              />
+              <Route exact path="/" component={() => <Redirect to="/home" />}/>  
+              <Route
+              path='/about'
+                render={(props) => <About {...props}  theme={this.state.theme}/>}
+              />
+              <Route path="/levelUp" 
+              render={(props) => <LevelUp {...props} hex={this.getHexagon()} showHex={true}  theme={this.state.theme}/>}
+              />
+            </Switch> 
+            
+  
+            </div>
+          </Router>
+          {/* {this.getHexagon()}
+          <hr/> */}
+          <ScrollUpButton/>
+        </div>
+        <div className="space"></div>
+        <Footer/>
       </div>
-      <div className="space"></div>
-      <Footer/>
-    </div>
-  );
+    );
+   }
 }
 
 export default App;
