@@ -26,11 +26,9 @@ class Home extends React.Component {
 
   addNotification() {
 
-    //heading
     var today = new Date();
     var heading = "Notice of Next Meeting";
-    
-    //check
+
     var check = "1";
 
     var dates = [new Date('2019-05-31'), new Date('2019-06-14'), new Date('2019-07-04'), new Date('2019-07-05')
@@ -39,15 +37,17 @@ class Home extends React.Component {
     for(var i=0;i<dates.length;i++) {
       
       if(today<=dates[i]) {
-        check = ("Your next grad program meeting is on the "+String(dates[i].toUTCString()));
+        var originalDate = String(dates[i].toUTCString());
+        var index = originalDate.indexOf(today.getFullYear());
+        var subString = originalDate.substr(0,index+4);
+        check = ("Your next grad program meeting is on the "+subString);
         i = dates.length;
+
       }
       else{
         check = String(dates[i].toUTCString());
       }
     }
-
-    //load dates
 
     this.notificationDOMRef.current.addNotification({
       
