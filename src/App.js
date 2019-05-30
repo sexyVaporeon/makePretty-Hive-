@@ -100,7 +100,7 @@ import './App.css';
           <hr/> */}
           <ScrollUpButton/>
         </div>
-        <div className="space"></div>
+        {/* <div className="space"></div> */}
         <Footer/>
       </div>
     );
