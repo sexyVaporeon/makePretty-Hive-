@@ -4,10 +4,18 @@ import './SelectBox.css';
 class SelectBox extends Component {
     constructor(props) {
         super(props);
+        if (localStorage.getItem("theme") === null){
         this.state = {
             selectedOption: this.props.options[0],
             isSelectOpen: false,
         };
+    }
+    else {
+        this.state = {
+            selectedOption: localStorage.getItem('theme'),
+            isSelectOpen: false,
+        };
+    }
     }
 
     handleOpen = () => {
@@ -26,7 +34,8 @@ class SelectBox extends Component {
 
     render() {
         let options = this.props.options.map((option, i) =>
-            <div key={ `option-${i}` } className="select__option" onClick={()=>this.handleSelectOption(option)}>{option}</div>
+            <div key={ `option-${i}` } className="select__option" onClick={()=>this.handleSelectOption(option)}>{option}
+            </div>
         );
 
         let classes = ['select'];
