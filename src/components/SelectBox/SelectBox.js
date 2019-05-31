@@ -24,6 +24,12 @@ class SelectBox extends Component {
         }));
     };
 
+    handleClose = () => {
+        this.setState(prevState => ({
+            isSelectOpen: false,
+        }));
+    };
+
     handleSelectOption = (option) => {
         this.setState({
             selectedOption: option}
@@ -47,7 +53,7 @@ class SelectBox extends Component {
             classes.push('select--open');
 
         return (
-            <div onClick={this.handleOpen} className={classes.join(' ')}>
+            <div onMouseEnter={this.handleOpen}  onMouseLeave ={this.handleClose} className={classes.join(' ')} >
                 <div className="select__selected"><b className="select__label">{this.props.label}</b> {this.state.selectedOption}</div>
                 <div  className="select__box">
                     {options}
