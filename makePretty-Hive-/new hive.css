@@ -32,12 +32,12 @@ html, body {
 
 h1{
     font-size: 16 pt;
-    font: icon;
+    font-style: icon;/*font : icon*/
 }
 
 p{
     font-size: 14 pt;
-    font: icon;
+    font-style: icon;
     font-weight: 200;
     
 }

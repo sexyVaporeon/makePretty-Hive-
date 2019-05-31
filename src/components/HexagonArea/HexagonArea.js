@@ -1,8 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import About from "./../About/About";
-import HeroJourneyImage from "../../Themes/Default/Hero.PNG";
-import style from './HexagonArea.css';
+import './HexagonArea.css';
 
 class HexagonArea extends React.Component {
 

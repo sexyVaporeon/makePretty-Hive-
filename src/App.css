@@ -40,7 +40,7 @@
     /* color:#484a4c; */
     text-decoration: none;
     font-size: 12 pt;
-    font: icon;
+    font-style: icon;
     font-weight: bold;
 
 }
@@ -140,9 +140,7 @@ float: center;
 }
 
 /*Main content*/
-.clearfix{
-  overflow: auto;
-}
+
 #homeHeader{
   text-align: justify;
 }
