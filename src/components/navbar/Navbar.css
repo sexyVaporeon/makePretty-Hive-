@@ -4,16 +4,15 @@
     height: 80px;
     display: inline-block;
     background-size: 100% 100%; 
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .menu{
-    width: 150%;
-    margin-top: 15%;
-    margin-left:-15%;
+    margin-top: 5%;
+    margin-left:-32%;
 }
 hr{
-    margin-top: -2%;
+    margin-top: -10%;
 }
 
 .Space{
