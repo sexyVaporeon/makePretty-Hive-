@@ -4,6 +4,7 @@
     height: 80px;
     display: inline-block;
     background-size: 100% 100%; 
+    margin-top: 10%;
 }
 
 .menu{
@@ -20,8 +21,9 @@ hr{
 }
 
 .Label{
-    margin-left: 5%;
+    
     font-size: 105%;
     font-weight: bold;
-    top: 0;
+    top: 1%;
+    position: absolute
 }
