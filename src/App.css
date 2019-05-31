@@ -1,0 +1,172 @@
+#image{
+  margin-top: 20px;
+  width: 150px; 
+  height: 80px;
+  margin-left: 20px
+}
+#footerControl {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color:#2e2e2e;
+    color: white;
+    text-align: center;
+
+    
+  }
+  #footerNote{
+    margin-bottom: -110px;
+  }
+#nav{
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    left: 200px;
+}
+#nav li {
+	display: inline;
+   /* text-decoration-color: black; */
+    text-decoration: none;
+    padding-left: 50px;
+    align-content: center;
+    
+}
+
+#nav li a{
+    /* color:#484a4c; */
+    text-decoration: none;
+    font-size: 12 pt;
+    font: icon;
+    font-weight: bold;
+
+}
+#test{
+  margin-top: 300px;
+  padding-top: 300px;
+}
+#imageHeroLeft{
+  float: left;
+  padding: 0 20px 20px 0;
+  height: 250px;
+  width: 200px;
+}
+#imageHeroRight{
+  float: right;
+  padding: 0 20px 20px 0;
+  height: 250px;
+  /* width: 200px; */
+}
+#heroQuote{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+text-align: justify, center;
+text-justify: inter-word;
+font-family: times, serif; font-size:14pt; font-style:italic;
+float: center;
+}
+.clearfix{
+  overflow: auto;
+}
+#heroHeader{
+  margin-bottom: 30px;
+}
+
+.Mainrow{
+  display: flex;
+  flex-direction: row;
+}
+
+.background{
+    display: inline-block;
+    position: relative;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100vw;
+    height: 100%;
+}
+
+.PokemonBackground{
+  background-image: url('./Themes/Pokemon/haunter.jpg');
+    display: inline-block;
+    background-size: 100% 100%; 
+    color: red;
+    background-attachment: scroll;
+}
+
+.SpongebobBackground{
+  background-image: url('./Themes/SpongeBob/background1.jpg');
+    display: inline-block;
+    background-size: 100% 100%; 
+    color: rgb(20, 17, 17);
+    background-attachment: scroll;
+}
+
+.AvengersBackground{
+  background-image: url('./Themes/Avengers/background.jpg');
+    display: inline-block;
+    background-size: 100% 100%; 
+    color: aqua;
+    background-attachment: scroll;
+}
+
+.DarkBackground{
+  background-color:#003366;
+  color: aliceblue;
+  display: inline-block;
+  position: relative;
+  padding:0;
+  margin:0;
+  background-attachment: scroll;
+
+  top:0;
+  left:0;
+
+  width: 100vw;
+  height: 100%;
+}
+
+.space{
+  height: 66.9vh;
+  width: 100vw;
+}
+
+/*Main content*/
+.clearfix{
+  overflow: auto;
+}
+#homeHeader{
+  text-align: justify;
+}
+#programmingLanguages{
+  height: 45px;
+  width: 45px;
+  margin-right: auto;
+}
+#btnHomeNotice{
+  float: right;
+  margin-right: 100px;
+}
+#textNotice{
+  padding-top: 50px;
+  margin-left: 140px;
+  margin-right: auto;
+  width: 70%;
+text-align: justify, center;
+text-justify: inter-word;
+font-family: times, serif; font-size:14pt; font-style:italic;
+float: center;
+}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+#handControl{
+  float: right;
+}
