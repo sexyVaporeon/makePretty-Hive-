@@ -13,10 +13,11 @@ import './App.css';
    constructor(props){
      super(props);
      if (localStorage.getItem("theme") === null)
-     this.state={
-       theme: 'Default',
-     };
-
+     {
+      this.state={
+        theme: 'Default',
+      };
+    }
     else 
       this.state ={
         theme: localStorage.getItem('theme')

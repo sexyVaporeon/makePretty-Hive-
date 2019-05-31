@@ -39,8 +39,6 @@
       max-width: 265px; }
     .select--borderless {
       border-width: 0; }
-    .select--half {
-      max-width: calc(530px / 2); }
     .select__label {
       color: #000; }
     .select__selected {
@@ -70,8 +68,10 @@
       box-shadow: 0 1px 10px rgba(0, 0, 0, 0.34902);
       display: none;
       z-index: 100; }
-    .select--open > .select__box {
-      display: block; }
+      
+    .select--open > .select__box{
+      display: block; 
+    }
     .select__option {
       padding: 20px 35px;
       border-bottom: 1px solid #EBEBEB; }
