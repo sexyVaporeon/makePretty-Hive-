@@ -72,7 +72,7 @@ import './App.css';
 
         <div id="root">
           <Router >
-            <Navbar liftStateUp={this.liftStateUp}/>
+            <Navbar liftStateUp={this.liftStateUp} colour={this.colour}/>
             <div className="Mainrow">
             
   

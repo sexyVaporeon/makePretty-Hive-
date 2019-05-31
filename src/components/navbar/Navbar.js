@@ -18,7 +18,7 @@ class Navbar extends React.Component {
 		this.props.liftStateUp(data);
 	  }
   render() {
-    return ( 
+    return (
 				<div className="navigation-bar">
 					<div className="navigation-container">
 					<StackPanel horizontalAlignment="center" verticalAlignment="center" orientation="horizontal"  padding="2%">
@@ -26,10 +26,10 @@ class Navbar extends React.Component {
 						<div className = "Space"></div>
 						<div className="menu">
 							<ul id="nav">
-									<li id="nav-Home"><Link to="/home">Home</Link></li>
-									<li id="nav-LevelUp"><Link to="/levelUp">LevelUp</Link></li>
-									<li id="nav-Bug"><a href="https://trello.com/c/h8WuGyYC/1-%F0%9F%90%9Ehey-i-found-a-bug">Report a bug</a></li>
-									<li id="nav-About"><Link to="/about">About</Link></li>
+									<li id="nav-Home"><Link  style={{color: this.props.colour}} to="/home">Home</Link></li>
+									<li id="nav-LevelUp"><Link style={{color: this.props.colour}} to="/levelUp">Level Up</Link></li>
+									<li id="nav-Bug"><a style={{color: this.props.colour}} href="https://trello.com/c/h8WuGyYC/1-%F0%9F%90%9Ehey-i-found-a-bug">Report a bug</a></li>
+									<li id="nav-About"><Link style={{color: this.props.colour}} to="/about">About</Link></li>
 							</ul>
 							</div>	
 							<div className = "Space"></div>
