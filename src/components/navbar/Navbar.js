@@ -1,20 +1,10 @@
 import React from 'react';
-import hiveImage from "../../Icon/hive.PNG";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import SelectBox from './../SelectBox/SelectBox';
 import './Navbar.css';
 import themes from './../../Constants/themes';
 import StackPanel from './../StackPanel/StackPanel';
-// import PropTypes from 'prop-types';
-// import styles from './navbar.scss';
 
-// const navbar = props => (
-// 	<div>This is a component called navbar.</div>
-// );
-
-// todo: Unless you need to use lifecycle methods or local state,
-// write your component in functional form as above and delete
-// this section. 
 class Navbar extends React.Component {
 	constructor(props){
 		super(props);
@@ -22,11 +12,6 @@ class Navbar extends React.Component {
 			activeNode: ''
 		}
 	}
-
-	// setActiveNode=(name)=>{
-	// 	this.setState({activeNode:name});
-	// 	this.props.liftStateUp(name);
-	// }
 
 	liftStateUp=(data)=>{
 		this.setState({activeNode:data});
@@ -58,11 +43,5 @@ class Navbar extends React.Component {
 	);
   }
 }
-
-// const navbarPropTypes = {
-// 	// always use prop types!
-// };
-
-//navbar.propTypes = navbarPropTypes;
 
 export default Navbar;

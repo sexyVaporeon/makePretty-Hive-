@@ -1,19 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route,Link } from "react-router-dom";
+import { BrowserRouter as Route,Link } from "react-router-dom";
 import About from "./../About/About";
 import LevelUp from '../LevelUp/LevelUp';
 import HexagonArea from './../HexagonArea/HexagonArea';
 import ReactNotification from "react-notifications-component";
 import '../../../node_modules/react-notifications-component/dist/theme.css';
 
-
-// const Home = props => (
-// 	<div>This is a component called Home.</div>
-// );
-
-// todo: Unless you need to use lifecycle methods or local state,
-// write your component in functional form as above and delete
-// this section. 
 class Home extends React.Component {
   constructor(props){
     super(props);

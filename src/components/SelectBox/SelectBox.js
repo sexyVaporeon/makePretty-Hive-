@@ -26,11 +26,11 @@ class SelectBox extends Component {
 
 
     render() {
-        const options = this.props.options.map((option, i) =>
+        let options = this.props.options.map((option, i) =>
             <div key={ `option-${i}` } className="select__option" onClick={()=>this.handleSelectOption(option)}>{option}</div>
         );
 
-        const classes = ['select'];
+        let classes = ['select'];
         if(this.props.borderless)
             classes.push('select--borderless');
         if(this.props.half)
@@ -49,11 +49,5 @@ class SelectBox extends Component {
     }
 }
 
-SelectBox.propTypes = {
-    selectedOption: PropTypes.string.isRequired,
-    isSelectOpen: PropTypes.string,
-    options: PropTypes.array.isRequired,
-    extra: PropTypes.string
-};
 
 export default SelectBox;

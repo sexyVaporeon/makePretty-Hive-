@@ -36,8 +36,4 @@ describe('Home', () => {
     mountedHome = undefined;
   });
 
-  // Shallow / unit tests begin here
- 
-  // Render / mount / integration tests begin here
-  
 });

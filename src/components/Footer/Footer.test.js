@@ -35,9 +35,5 @@ describe('Footer', () => {
     renderedFooter = undefined;
     mountedFooter = undefined;
   });
-
-  // Shallow / unit tests begin here
- 
-  // Render / mount / integration tests begin here
   
 });

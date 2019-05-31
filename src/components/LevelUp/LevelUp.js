@@ -1,7 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import About from "./../About/About";
-import HeroJourneyImage from "../../Themes/Default/Hero.PNG";
 import HexagonArea from '../HexagonArea/HexagonArea';
 import Hexagon from './../Hexagon/Hexagon';
 import './LevelUp.css';

@@ -36,8 +36,4 @@ describe('navbar', () => {
     mountednavbar = undefined;
   });
 
-  // Shallow / unit tests begin here
- 
-  // Render / mount / integration tests begin here
-  
 });
