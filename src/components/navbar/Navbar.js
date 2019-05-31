@@ -34,7 +34,10 @@ class Navbar extends React.Component {
 							</div>	
 							<div className = "Space"></div>
 							<div >
-							<SelectBox options={themes} liftStateUp={this.liftStateUp}></SelectBox>
+							<StackPanel horizontalAlignment="center" verticalAlignment="center" orientation="vertical"  padding="2%">
+								<div className="Label">Theme:</div>
+								<SelectBox options={themes} liftStateUp={this.liftStateUp}></SelectBox>
+							</StackPanel>		
 							</div>
 							</StackPanel>
 							<hr/>

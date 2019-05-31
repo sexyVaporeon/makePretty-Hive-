@@ -20,7 +20,7 @@
     border: solid 2px #999;
     border-radius: 3px;
     text-align: left; 
-    margin-left: 100%}
+    /* margin-left: 100%} */}
     .select::after {
       content: '';
       cursor: pointer;

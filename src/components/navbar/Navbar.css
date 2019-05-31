@@ -19,3 +19,9 @@ hr{
     width: 15vw;
 }
 
+.Label{
+    margin-left: 5%;
+    font-size: 105%;
+    font-weight: bold;
+    top: 0;
+}
